@@ -1,0 +1,28 @@
+.navbar{
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+
+  .logo{
+    margin-right: auto;
+  }
+  
+   ul{
+    display: flex;
+    gap: 0.5em;
+   
+    li{
+      list-style: none;
+      a{
+        margin-left: 12px;
+        text-decoration: none;
+        color: #333; 
+      }
+    }
+    }  
+
+  }
+  
