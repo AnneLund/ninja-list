@@ -17,6 +17,7 @@ const addStudent = () => {
         email: email
     }).then(() => {
             console.log('Bruger tilføjet databasen!')
+            alert('Bruger tilføjet databasen');
 });
 }
 
