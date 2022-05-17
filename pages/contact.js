@@ -4,15 +4,15 @@ import Axios from 'axios'
 
 const Contact = () => {
 
+//Ved hjælp af useState, kan jeg gemme mine tidligere values og tilføje nye.
+
 const [name, setName] = useState('');
-const [id, setId] = useState(0);
 const [age, setAge] = useState(0);
 const [email, setEmail] = useState('');
 
 const addStudent = () => {
     Axios.post('http://localhost:3001/create', {
-        name: name,
-        id: id, 
+        name: name, 
         age: age, 
         email: email
     }).then(() => {
@@ -38,16 +38,7 @@ const addStudent = () => {
             onChange={(event) => 
             {setName(event.target.value);}}
             />
-
-            {/* //ID */}
-
-            <label>Id:</label>
-            <input 
-            type="number" 
-            onChange={(event) => 
-            {setId(event.target.value);}}
-            />
-
+            
             {/* //ALDER */}
 
             <label>Age:</label>

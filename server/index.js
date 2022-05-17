@@ -20,14 +20,13 @@ app.listen(3001, () => {
 
 app.post('/create', (req, res) => {
 const name = req.body.name
-const id = req.body.id
 const age = req.body.age
 const email = req.body.email;
 
 
 db.query(
-    "INSERT INTO students (name, id, age, email) VALUES (?,?,?,?)", 
-[name, id, age, email],
+    "INSERT INTO students (name, id, age, email) VALUES (?,?,?)", 
+[name, age, email],
 (err, result) => {
     if (err) {
         console.log(err)
