@@ -22,12 +22,12 @@ app.post('/create', (req, res) => {
 const name = req.body.name
 const id = req.body.id
 const age = req.body.age
-const grade = req.body.grade;
+const email = req.body.email;
 
 
 db.query(
-    "INSERT INTO students (name, id, age, grade) VALUES (?,?,?,?)", 
-[name, id, age, grade],
+    "INSERT INTO students (name, id, age, email) VALUES (?,?,?,?)", 
+[name, id, age, email],
 (err, result) => {
     if (err) {
         console.log(err)

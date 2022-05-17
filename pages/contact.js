@@ -7,16 +7,16 @@ const Contact = () => {
 const [name, setName] = useState('');
 const [id, setId] = useState(0);
 const [age, setAge] = useState(0);
-const [grade, setGrade] = useState('');
+const [email, setEmail] = useState('');
 
 const addStudent = () => {
     Axios.post('http://localhost:3001/create', {
         name: name,
         id: id, 
         age: age, 
-        grade: grade
+        email: email
     }).then(() => {
-            console.log('Succes!')
+            console.log('Bruger tilføjet databasen!')
 });
 }
 
@@ -28,6 +28,9 @@ const addStudent = () => {
         </Head>
         <section>
             <div className="input-container">
+
+                {/* //NAVN */}
+
             <label>Name:</label>
             <input 
             type="text" 
@@ -35,13 +38,16 @@ const addStudent = () => {
             {setName(event.target.value);}}
             />
 
-            
-<label>Id:</label>
+            {/* //ID */}
+
+            <label>Id:</label>
             <input 
             type="number" 
             onChange={(event) => 
             {setId(event.target.value);}}
             />
+
+            {/* //ALDER */}
 
             <label>Age:</label>
             <input 
@@ -50,16 +56,21 @@ const addStudent = () => {
             {setAge(event.target.value);}}
             />
 
+            {/* //EMAIL */}
 
-            <label>Karakter:</label>
+            <label>Email:</label>
             <input 
-            type="number" 
+            type="text" 
             onChange={(event) => 
-            {setGrade(event.target.value);}}
+            {setEmail(event.target.value);}}
             /> 
+
+            {/* //KNAP */}
+
             <button onClick={addStudent}>Tilføj person</button>
             </div>  
-        </section>
+            </section>
+
         </>
     )
 }
