@@ -20,5 +20,23 @@ a{
 }  
 }
 
+.input-container{
+  display:flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  input{
+    margin: 1em 0;
+  }
+  button{
+    padding: 10px;
+    margin: 10px 0;
+    &:hover{
+      cursor: pointer; 
+    }
+  }
+}
+
  
 
