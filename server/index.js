@@ -32,7 +32,7 @@ db.query(
     if (err) {
         console.log(err)
     } else {
-        res.send('Values Inserted Successfully');
+        alert('Values Inserted Successfully');
     }
 })
 })
