@@ -12,12 +12,14 @@ export default function Home() {
     </Head>
 
    <section>
-     <h1 className={styles.title}>Min helt nye Next-app!</h1>
-     <p className={styles.text}>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p className={styles.text}>lorem ipsum dolor sit amet, consectetur adip</p>
-    <Link href="/ninjas">
-     <a className={styles.btn}>See a Ninja Listing</a>
-     </Link>
+     <h1 className={styles.title}>Mit test-projekt hvor jeg har eksperimenteret med:</h1>
+     <ul className="list">
+       <li>Next.js</li>
+       <li>Routing</li>
+       <li>Modules</li>
+       <li>SQL Database post/get</li>
+       <li>Fetching fra en API</li>
+     </ul>
    </section>
    </>
   )

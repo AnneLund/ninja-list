@@ -17,25 +17,48 @@ body {
 a{
   color: #4979ff;
   text-decoration: underline;
-}  
+}
+
+}
+
+.list{
+  list-style-type: circle;
+ margin: 0 auto;
+ width: 25%;
+  list-style-position: inside;
+}
+
+.postget{
+ display: flex;
+ justify-content: space-around;
 }
 
 .input-container{
-  display:flex;
-  flex-direction: column;
-  width: 25%;
-  margin: 0 auto;
+text-align: center;
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+button{
+  padding: 10px;
+  margin: 10px 0;
+  &:hover{
+    cursor: pointer; 
+  }
+}
+
+.users{
   text-align: center;
-  input{
-    margin: 1em 0;
+  .get-users{
+  padding:0 10px;
+  font-family: "Nunito";
   }
-  button{
-    padding: 10px;
-    margin: 10px 0;
-    &:hover{
-      cursor: pointer; 
-    }
-  }
+}
+
+.user{
+  margin: 10px;
 }
 
  

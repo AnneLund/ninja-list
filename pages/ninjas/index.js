@@ -1,5 +1,6 @@
 import styles from '../../styles/Ninjas.module.scss'
 import Link from 'next/link'
+
 export const getStaticProps =  async () => {
 
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -14,7 +15,7 @@ export const getStaticProps =  async () => {
 const Ninjas = ({ninjas}) => {
   return(
         <div>
-            <h1>Forside for Ninjaerne</h1>
+            <h1>Fetching af data fra json</h1>
             {ninjas.map(ninja => (
                 <Link href={'/ninjas/' + ninja.id} key={ninja.id}>
                 <a className={styles.single}> 

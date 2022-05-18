@@ -11,8 +11,8 @@ const Navbar = () => {
             <ul> 
             <li><Link href="/"><a>Forside</a></Link> </li>
             <li><Link href="/about"><a>Om</a></Link> </li>
-            <li> <Link href="/ninjas"><a>Ninja Listing</a></Link> </li>
-            <li> <Link href="/contact"><a>Kontakt</a></Link> </li>
+            <li> <Link href="/ninjas"><a>API Fetching</a></Link> </li>
+            <li> <Link href="/database"><a>SQL database</a></Link> </li>
             </ul>
         </nav>
     )
