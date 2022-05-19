@@ -1,3 +1,5 @@
+import styles from '../../styles/Ninjas.module.scss'
+
 export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
     const data = await res.json();
