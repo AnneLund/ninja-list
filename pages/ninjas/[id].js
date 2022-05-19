@@ -27,13 +27,13 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ ninja }) => {
     return (
-        <div>
+        <div className={styles.details}>
+            <p>Details page her</p>
             <h1>{ninja.name}</h1>
-            <p>{ninja.email}</p>
-            <p>{ninja.website}</p>
-            <p>{ninja.address}</p>
+            <p>{ninja.email}</p> 
         </div>
     )
 }
 
 export default Details;
+
