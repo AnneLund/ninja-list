@@ -29,9 +29,9 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ ninja }) => {
     return (
-        <div className={styles.details}>
-            <p>Details page her</p>
-            <h1>{ninja.name}</h1>
+        <div key={ninja.id} className={styles.details}>
+            <p>Details page</p>
+            <h1 key={ninja.name}>{ninja.name}</h1>
             <p>{ninja.email}</p> 
         </div>
     )
