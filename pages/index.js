@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Ninja List | Home</title>
-      <meta name="keywords" content="Ninjas"></meta>
+      <title>My Coolest App | Home</title>
+      <meta name="keywords" content="code-practice"></meta>
     </Head>
 
    <section>

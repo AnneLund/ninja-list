@@ -40,6 +40,17 @@ const getUsers = () => {
 setToggle(!toggle)
 }
 
+const deleteUser = () => {
+Axios.delete('http://localhost:3001/users', { data: payload }).then((response) => {
+    setUsersList(response.data);
+}
+    // Observe the data keyword this time. Very important
+    // payload is the request body
+    // Do something
+  )
+    
+}
+
     return(
         <>
         <Head>
@@ -84,10 +95,10 @@ setToggle(!toggle)
             {setEmail(event.target.value);}}
             />
             </form>
- {/* //TILFØJ-KNAP */}
+            {/* //TILFØJ-KNAP */}
              <button onClick={addUser}>Tilføj bruger</button>  
             </fieldset>
-        </div>
+            </div>
            
 
             {/* //HENT-KNAP */}
@@ -115,9 +126,9 @@ setToggle(!toggle)
                
                
             })}
-            </section> 
             </section>
-
+            </section>
+            
         </>
     )
 }
