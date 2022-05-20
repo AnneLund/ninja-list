@@ -1,17 +1,19 @@
 .single {
     padding: 2px 16px;
     background: #fff;
+    color: rgb(44, 44, 44);
     display: block;
     margin: 20px 10px;
     border-left: 8px solid #fff;
+    text-decoration: none;
     &:hover{
-     border-left: 8px solid #4979ff;   
+     border-left: 8px solid #000000;
+     background-color: rgba(128, 128, 128, 0.442);
+     transition: 500ms;   
     }
   }
 
   .details{
-    background-color: rgb(203, 159, 159);
-    width: 10vw;
-    height: 20vh;
+    padding: 1em;  
   }
  

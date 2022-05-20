@@ -22,9 +22,14 @@ const Ninjas = ({ninjas}) => {
                     <h3>{ninja.name}</h3>
                 </a>
                 </Link>
+               
             ))}
+            
         </div>
     )    
 }
 
 export default Ninjas;
+
+
+ 

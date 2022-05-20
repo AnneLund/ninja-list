@@ -19,6 +19,7 @@ export default function Home() {
        <li>Modules</li>
        <li>SQL Database post/get</li>
        <li>Fetching fra en API</li>
+       <li>SCSS</li>
      </ul>
    </section>
    </>
